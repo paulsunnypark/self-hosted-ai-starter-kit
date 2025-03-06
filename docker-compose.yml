@@ -46,6 +46,7 @@ x-init-ollama: &init-ollama
 
 services:
   postgres:
+    container_name: postgres
     image: postgres:16-alpine
     hostname: postgres
     networks: ['demo']
